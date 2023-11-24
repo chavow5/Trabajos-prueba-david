@@ -1,0 +1,94 @@
+/* Estilos para los botones */
+.boton {
+    margin: 10px; /* Espaciado entre botones */
+}
+
+.btn-custom {
+    background-color: #1b181e; /* Color de fondo azul */
+    color: #f8f1f1; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-custom:hover {
+    background-color: rgb(60, 65, 183); /* Cambia el color al pasar el mouse */
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Esto asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.boton-clientes {
+    margin-right: 10px; /* O el valor que desees */
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    animation: cambiaColor 3s infinite;
+    text-align: center;
+  }
+  
+  @keyframes cambiaColor {
+    0% , 100% {
+      color: rgb(46, 151, 192); 
+    }
+    40% {
+      color: rgb(88, 150, 136); 
+    }
+    80% {
+      color: rgb(99, 172, 117); 
+    }
+  }
+
+  body {
+   
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: relative; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+ 
+
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('https://img.freepik.com/foto-gratis/paisaje-marino-abu-dhabi-rascacielos_181624-11582.jpg?w=740&t=st=1700774540~exp=1700775140~hmac=89bdec43eb5af1aab2bbcc4f67b04fd44c7866dadf4ac27b667a0489658271ef');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.200); /* Añade una sombra oscura */
+}
+
+/* Estilos generales */
+
+
+  /* Estilos de la barra de navegación */
+  
+  .nav-link {
+    color: #010101; /* Color del texto en los enlaces de navegación */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ecf0f1; /* Cambia el color del texto al pasar el ratón por encima */
+  }
+  
+  body {
+    color: #ecf0f1; /* Color del texto en el fondo oscuro */
+  }
+

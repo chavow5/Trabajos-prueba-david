@@ -1,0 +1,27 @@
+
+body{
+  background-color: rgb(250, 250, 251);
+}
+
+h1{
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 40px;
+  margin: auto;
+}
+input{
+  padding-bottom: 10px;
+  margin: 10px;
+}
+body {
+  background-image: url('https://img.freepik.com/foto-gratis/paisaje-marino-abu-dhabi-rascacielos_181624-11582.jpg?w=740&t=st=1700774540~exp=1700775140~hmac=89bdec43eb5af1aab2bbcc4f67b04fd44c7866dadf4ac27b667a0489658271ef');
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Añade una sombra oscura */
+}

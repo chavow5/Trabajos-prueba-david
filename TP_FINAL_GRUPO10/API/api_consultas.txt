@@ -1,0 +1,93 @@
+METODOS CRUD API TRABAJO FINAL BANCO
+Create = Post
+Read = Get
+Update = PUT
+Delete = Delete
+
+######### GET######### 
+
+metodo GET: CLIENTES
+mostrar todos los clientes
+http://localhost:3000/clientes
+
+metodo GET: CUENTAS
+mostrar todos los cuentas
+http://localhost:3000/cuentas
+
+metodo GET: TRANSACCIONES
+mostrar todas las transacciones
+http://localhost:3000/transacciones
+
+
+######### POST #########
+
+metodo POST "agregar clientes"
+post http://localhost:3000/clientes
+(Body) JSON
+{
+    "clientes" :{
+      "nombre":"felipe",
+      "apellido": "ramirez",
+      "email": "pollo@gmail.com"
+    }
+  }
+
+metodo POST "agregar cuentas"
+post http://localhost:3000/cuentas
+(Body) JSON
+{
+    "cuentas" :{
+      "id_cuenta":"1",
+      "id_cliente": "2",
+      "saldo": "100"
+    }
+  }
+
+metodo POST "agregar transacciones"
+post http://localhost:3000/transacciones
+(Body) JSON
+{
+    "transacciones" :{
+      "id_cuenta_origen":"1",
+      "id_cuenta_destino": "2",
+      "monto": "1000",
+      "descripcion": "insertar texto"
+    }
+  }
+
+######### UPDATE / MODIFICAR #########
+metodo PUT "editar CUENTAS"
+
+
+metodo PUT "editar CLIENTES" 
+http://localhost:3000/clientes/:id
+(Body) JSON
+{
+    "clientes" :{
+      "nombre":"felipe",
+      "apellido": "ramirez",
+      "email": "pollo@gmail.com"
+    }
+  }
+metodo PUT "editar TRANSACCION"
+http://localhost:3000/transaccion/:id
+(Body) JSON
+{
+    "transaccion" :{
+    "fecha": null,
+    "monto": "155000.00",
+    "descripcion": "prueba transferencia modificada"
+    }
+  }
+
+######### DELETE #########
+
+metodo DELETE "quitar CUENTAS"
+http://localhost:3000/cuentas/:id
+quitar cuentas
+metodo DELETE "quitar CLIENTES"
+http://localhost:3000/clientes/:id
+quitar clientes
+metodo DELETE "quitar TRANSACCIONES"
+http://localhost:3000/transacciones/:id
+quitar transacciones
