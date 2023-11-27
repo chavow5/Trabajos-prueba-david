@@ -42,6 +42,12 @@ export const Clientes = () => {
       <Link to={'/clientes/agregar'}>
         <button className="btn btn-dark">Agregar Cliente</button>
       </Link>
+      
+      <Link to={`/clientes/editarclientes`}>
+        <button className="btn btn-dark">Editar Cliente</button>
+      </Link>
+
+
       <button className="btn btn-dark" onClick={ borrarClientes}>Eliminar Cliente</button>
       {cliente &&<div className="text-center">      
         <h2>{cliente.id} {cliente.apellido} {cliente.nombre} </h2>
