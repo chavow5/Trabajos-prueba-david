@@ -6,9 +6,15 @@ const TablaClientes = ({ clientes, cliente }) => {
           <thead className="table-success">
             <tr>
               <th>ID</th>
-              <th>Nombre</th>
-              <th>Apellido</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
               <th>Email</th>
+              <th>Telefono</th>
+              <th>saldo</th>
+              <th>Fecha Nacimiento</th>
+              <th>Domicilio</th>
+              <th>Sexo</th>
+              {/* falta acomodar */}
             </tr>
           </thead>
           <tbody>
@@ -19,6 +25,11 @@ const TablaClientes = ({ clientes, cliente }) => {
                 <td>{al.nombre}</td>
                 <td>{al.apellido}</td>
                 <td>{al.email}</td>
+                <td>{al.telefono}</td>
+                <td>{al.saldo}</td>
+                <td>{al.fecha_nacimiento}</td>
+                <td>{al.domicilio}</td>
+                <td>{al.sexo}</td>
               </tr>
             ))}
           </tbody>
