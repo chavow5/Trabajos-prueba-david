@@ -34,7 +34,20 @@ export const Clientes = () => {
       }
     }
   };
+  // // borrar
+  // const eliminarTarea = async (tareaId) => {
+  //   if (window.confirm("¿Desea eliminar la tarea?")) {
+  //     const res = await fetch(`http://localhost:3000/tareas/${tareaId}`, {
+  //       method: "DELETE",
+  //     });
 
+  //     if (res.ok) {
+  //       setTareas(tareas.filter((tarea) => tarea.id !== tareaId));
+  //     } else {
+  //       console.log("Fallo al quitar tarea");
+  //     }
+  //   }
+  // };
   
   return (
     <>   
