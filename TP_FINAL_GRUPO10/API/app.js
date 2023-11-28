@@ -29,6 +29,33 @@ app.get("/", (req, res) => {
 // TRANSACCION
 
 //######### POST AGREGAR #########
+app.post("/prueba",   //Se crea un post para agregar personas a la tabla empleados
+body("usuario").isAlphanumeric().isLength({ min: 1, max: 25 }),
+body("password").isStrongPassword({   //Se le indican las restricciones de la contraseña
+  minLength: 8,   //Minimo 8 caracteres
+  minLowercase: 1,  //Minimo una minuscula
+  minUppercase: 1,  //Minimo una mayuscula
+  minNumbers: 1,    //Minimo un numero
+  minSymbols: 0,
+}),
+
+async (req, res) => {
+  const validacion = validationResult(req);
+  if (!validacion.isEmpty()) {
+    res.status(400).send({ errors: validacion.array() });
+    return;
+    } console.log(req.body);
+    const { nombre, apellido, email,usuario, password ,saldo, telefono,sexo, fecha_nacimiento,domicilio } = req.body;  //Se crean las constantes para indicar los valores en el body
+    const passwordHashed = await bcrypt.hash(password, 8);  //Se encripta la contraseña
+    const [rows] = await db.execute(
+      //Se le indican los valores ingresados a las constantes del body anteriormente creadas
+      "INSERT INTO clientes ( nombre, apellido, email,usuario, password ,saldo, telefono,sexo, fecha_nacimiento,domicilio) VALUES (:nombre, :apellido, :email,:usuario, :password ,:saldo, :telefono,:sexo, :fecha_nacimiento,:domicilio)",
+      { nombre:nombre, apellido:apellido, email:email, usuario:usuario, password:passwordHashed, saldo:saldo,telefono:telefono ,sexo:sexo, fecha_nacimiento:fecha_nacimiento }
+    );
+    res.status(201).send({ id: rows.insertId, nombre, apellido, email,saldo, telefono,sexo, fecha_nacimiento,domicilio }); //Si todo esta correcto se envia a la base de datos y devuelve un mensaje positivo
+  }
+)
+
 
 // POST Agregar/crear Clientes
 app.post("/clientes", async (req, res) => {

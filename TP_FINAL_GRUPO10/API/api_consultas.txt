@@ -1,3 +1,14 @@
+instalar npm i
+de login
+passport
+passport-jwt
+express
+bcrypt
+jsonwebtoken
+express-validator
+
+
+
 METODOS CRUD API TRABAJO FINAL BANCO
 Create = Post
 Read = Get
