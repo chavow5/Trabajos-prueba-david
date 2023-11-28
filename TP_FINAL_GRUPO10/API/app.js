@@ -91,12 +91,12 @@ app.put("/cuentas/:id", async (req, res) => {
 // POST agregar/crear Transacciones
 app.post("/transacciones", async (req, res) => {
   const transacciones = req.body.transacciones;
-  
   const [rows] = await db.execute(
-    "INSERT INTO `banco2`.`transacciones` (`id_cuenta_origen`, `id_cuenta_destino`,`monto`,`descripcion` ) VALUES (:id_cuenta_origen, :id_cuenta_destino, :monto, :descripcion);",
+    "INSERT INTO `banco2`.`transacciones` (`id_cuenta_origen`,`fecha`,`monto`,`descripcion` ) VALUES ( :id_cuenta_destino,:fecha ,:monto, :descripcion);",
     {
       id_cuenta_origen: transacciones.id_cuenta_origen,
-      id_cuenta_destino: transacciones.id_cuenta_destino,
+      // id_cuenta_destino: transacciones.id_cuenta_destino,
+      fecha: transacciones.fecha,
       monto: transacciones.monto,
       descripcion: transacciones.descripcion,
     }

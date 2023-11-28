@@ -3,10 +3,11 @@ import { Link } from "react-router-dom"
 
 export const NuevaTransaccion = () => {
     const [NuevaTransacciones, setNuevaTransaccion] = useState({
-      nombre: undefined ,
-      apellido: undefined,
-      dni:undefined,
-      direccion:undefined,
+      id_cuenta_origen: null ,
+      id_cuenta_destino: null,
+      fecha: null,
+      monto: null,
+      descripcion: null
     })
 
     const NuevaTransaccion = async () =>{
@@ -27,14 +28,14 @@ export const NuevaTransaccion = () => {
            <h1>Ingrese una nueva Transferencia</h1>
             <form onSubmit={NuevaTransacciones}>
                 <div className="row">
-                    <div className="col">
+                    {/* <div className="col">
                         <label htmlFor="Cuenta Origen">Cuenta Origen</label>
                         <input type="text"
                         className="form-control"
                         value={NuevaTransaccion.id_cuenta_origen}
                         onChange={(e)=>{setNuevaTransaccion({...NuevaTransaccion, id_cuenta_origen:e.target.value})}}
                         />
-                    </div>
+                    </div> */}
                     <div className="col">
                         <label htmlFor="Cuenta Destino">Cuenta Destino</label>
                         <input type="text"
@@ -45,15 +46,15 @@ export const NuevaTransaccion = () => {
                     </div>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="fecha">fecha </label>
-                    <input
+                    <label htmlFor="fecha">Fecha </label>
+                    <input type="text"
                     className="form-control"
                     value={NuevaTransaccion.fecha}
-                    onChange={(e)=>{setNuevoProfesor({...NuevaTransaccion, fecha:e.target.value})}}
+                    onChange={(e)=>{setNuevaTransaccion({...NuevaTransaccion, fecha:e.target.value})}}
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="direccion">monto</label>
+                    <label htmlFor="direccion">Monto a transferir</label>
                     <input type="text"
                     className="form-control"
                     value={NuevaTransaccion.monto}
@@ -68,7 +69,8 @@ export const NuevaTransaccion = () => {
                     onChange={(e)=>{setNuevaTransaccion({...NuevaTransaccion, descripcion:e.target.value})}}
                     />
                 </div>
-                <button enabled={!NuevaTransaccion.id_cuenta_origen ||
+                <button enabled={
+                    // !NuevaTransaccion.id_cuenta_origen ||
                     !NuevaTransaccion.id_cuenta_destino  ||
                     !NuevaTransaccion.fecha  ||
                     !NuevaTransaccion.monto ||
