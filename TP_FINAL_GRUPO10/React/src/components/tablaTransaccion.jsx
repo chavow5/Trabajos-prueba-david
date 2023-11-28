@@ -5,7 +5,8 @@ const TablaTransacciones = ({ transacciones, transaccion }) => {
         <table className="table table-hover">
           <thead className="table-success">
             <tr>
-              {/* <th>ID</th> */}
+              {/* administrador */}
+              <th>ID transaccion</th>
               <th>Cuenta Origen</th>
               <th>Cuenta Destino</th>
               <th>Fecha</th>

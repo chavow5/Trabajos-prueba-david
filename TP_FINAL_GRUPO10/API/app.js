@@ -7,7 +7,7 @@ import mysql from "mysql2/promise";
 const db = await mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "admin", // en laptop cambiar por admin
+  password: "", // en laptop cambiar por admin
   database: "banco2", // nombre de base de datos
   namedPlaceholders: true,
 });
