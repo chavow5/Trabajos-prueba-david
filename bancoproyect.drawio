@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-28T04:36:07.359Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" etag="q6kVX21GYs6zsc9u-J8q" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-28T04:55:04.735Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" etag="I2Dymscwm6ix1ck9gV8o" version="22.1.4" type="github">
   <diagram name="Página-1" id="HQ2seOIjVY3zAPGUkfLc">
     <mxGraphModel dx="1226" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -144,10 +144,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="QaTXq2u6zS-n5LZm85QT-1" value="Tareas Realizadas&lt;br&gt;mejorar la base de datos&lt;br&gt;admin&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="305" y="720" width="280" height="150" as="geometry" />
+          <mxGeometry x="25" y="770" width="280" height="150" as="geometry" />
         </mxCell>
         <mxCell id="QaTXq2u6zS-n5LZm85QT-2" value="Tareas Pendientes&lt;br&gt;descontar desde saldo&lt;br&gt;login&lt;br&gt;transferencia desde admin y clientes&lt;br&gt;agregar clientes&amp;nbsp;&lt;br&gt;eliminar cuentas&lt;br&gt;pagina de clientes&lt;br&gt;plazo fijo" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="620" y="710" width="280" height="150" as="geometry" />
+          <mxGeometry x="350" y="760" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="QaTXq2u6zS-n5LZm85QT-3" value="preguntas&lt;br&gt;descontar monto&lt;br&gt;post de agregar clientes&lt;br&gt;delete clientes&amp;nbsp;&lt;br&gt;&amp;nbsp;login&lt;br&gt;editar clientes (formulario)&lt;br&gt;combinar paginas&lt;br&gt;login como pagina principal&lt;br&gt;especificar login de admin o clientes&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="800" y="620" width="280" height="340" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
