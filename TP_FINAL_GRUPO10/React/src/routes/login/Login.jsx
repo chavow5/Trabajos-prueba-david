@@ -10,7 +10,7 @@ export const LoginPage = () => {
   const location = useLocation();
   const [error, setError] = useState(false);
  
-  const from = location.state?.from?.pathname || "/nuevo-pasajero";
+  const from = location.state?.from?.pathname || "/nuevocliente ";
 
   const onSubmit = (event) => {
     const formData = new FormData(event.currentTarget);
