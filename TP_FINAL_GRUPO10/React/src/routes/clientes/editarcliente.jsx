@@ -7,6 +7,11 @@ export const Editarcliente = () => {
     nombre: "",
     apellido: "",
     email: "",
+    contraseña: "",
+    saldo: "",
+    telefono: "",
+    sexo: "",
+    fecha_nacimiento:"",
   });
 
   useEffect(() => {
@@ -57,8 +62,6 @@ return (
             onChange={(e) => setEditarcliente({ ...Editarcliente, nombre: e.target.value })} 
           />
         </label>
-        <br />
-  
         <label>
           Apellido:
           <input
@@ -69,7 +72,6 @@ return (
           />
         </label>
         <br />
-  
         <label>
           Correo Electrónico:
           <input
@@ -80,8 +82,52 @@ return (
           />
         </label>
         <br />
-  
-        {/* Otros campos y elementos de formulario según sea necesario */}
+        <label>
+          Contraseña:
+          <input
+            type="text"
+            name="contraseña"
+            value={Editarcliente.contraseña} 
+            onChange={(e) => setEditarcliente({ ...Editarcliente, contraseña: e.target.value })} 
+          />
+        </label>
+        <label>
+          Saldo:
+          <input
+            type="number"
+            name="saldo"
+            value={Editarcliente.saldo} 
+            onChange={(e) => setEditarcliente({ ...Editarcliente, saldo: e.target.value })} 
+          />
+        </label>
+        <label>
+          Telefono:
+          <input
+            type="text"
+            name="telefono"
+            value={Editarcliente.telefono} 
+            onChange={(e) => setEditarcliente({ ...Editarcliente, telefono: e.target.value })} 
+          />
+        </label>
+        <label>
+          Sexo:
+          <input
+            type="text"
+            name="sexo"// cambiar por opciones
+            value={Editarcliente.sexo} 
+            onChange={(e) => setEditarcliente({ ...Editarcliente, sexo: e.target.value })} 
+          />
+        </label>
+        <label>
+          Fecha de Nacimiento:
+          <input
+            type="date" // cambiar por fecha
+            name="fecha_nacimiento"
+            value={Editarcliente.fecha_nacimiento} 
+            onChange={(e) => setEditarcliente({ ...Editarcliente, fecha_nacimiento: e.target.value })} 
+          />
+        </label>
+        
   
         <button type="submit">Guardar Cambios</button>
       </form>

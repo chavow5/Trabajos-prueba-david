@@ -124,7 +124,15 @@ app.put("/clientes/:id", async (req, res) => {
   const clientes = req.body.clientes;
   await db.execute(
     "UPDATE clientes SET nombre=:nombre, apellido=:apellido, email=:email WHERE id_cliente=:id",
-    { id, nombre: clientes.nombre, apellido: clientes.apellido, email: clientes.email }
+    { id, nombre: clientes.nombre,
+      apellido: clientes.apellido, 
+      email: clientes.email,
+      contraseña: clientes.contraseña,
+      saldo: clientes.saldo,
+      telefono: clientes.telefono,
+      sexo: clientes.sexo,
+      fecha_nacimiento: clientes.fecha_nacimiento
+    }
   );
   res.send("ok, cliente editado");
 });

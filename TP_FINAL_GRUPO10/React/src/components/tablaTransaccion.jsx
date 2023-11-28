@@ -9,8 +9,8 @@ const TablaTransacciones = ({ transacciones, transaccion }) => {
               <th>ID transaccion</th>
               <th>Cuenta Origen</th>
               <th>Cuenta Destino</th>
-              <th>Fecha</th>
               <th>Monto</th>
+              <th>Fecha</th>
               <th>Descripcion</th>
             </tr>
           </thead>
