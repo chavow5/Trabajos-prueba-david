@@ -158,7 +158,7 @@ app.delete("/cuentas/:id", async (req, res) => {
 // DELETE Eliminar Clientes
 app.delete("/clientes/:id", async (req, res) => {
   const id = req.params.id;
-  await db.execute("DELETE FROM clientes WHERE id=:id", { id_cliente });
+  await db.execute("DELETE FROM clientes WHERE id=:id_cliente", { id_cliente });
   res.send("se ha eliminado el cliente con exito X_X");
 });  
 // DELETE Eliminar transacciones

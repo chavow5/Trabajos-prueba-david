@@ -24,7 +24,7 @@ export const Clientes = () => {
   // borrar clientes
    const borrarClientes = async () => {
     if (window.confirm("¿Desea eliminar al Cliente?")) {
-      const res = await fetch(`http://localhost:3000/clientes/${clientes.id_cliente}`, {
+      const res = await fetch(`http://localhost:3000/clientes/${clientes.id}`, {
         method: "DELETE",
       });
       if (res.ok) {

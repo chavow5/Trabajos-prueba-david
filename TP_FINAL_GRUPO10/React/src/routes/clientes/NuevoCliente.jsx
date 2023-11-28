@@ -5,9 +5,14 @@ import { Link } from "react-router-dom"
 
 export const NuevoCliente = () => {
     const [nuevoCliente, setNuevoCliente] = useState({
-      nombre: undefined ,
-      apellido: undefined,
-      email:undefined,
+      nombre: null ,
+      apellido: null,
+      email: null,
+      contraseña: null,
+      saldo: null ,
+      telefono: null, 
+      sexo:null,
+      fecha_nacimiento: null
     })
 
     const subirCliente = async () =>{
