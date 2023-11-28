@@ -34,11 +34,16 @@ app.get("/", (req, res) => {
 app.post("/clientes", async (req, res) => {
   const clientes = req.body.clientes; // body JSON en txt sale escrito post
   const [rows] = await db.execute(
-    "INSERT INTO `banco2`.`clientes` (`nombre`, `apellido`, `email`) VALUES (:nombre, :apellido, :email);",
+    "INSERT INTO `banco2`.`clientes` (`nombre`, `apellido`, `email`, `saldo`, `telefono`, `sexo`, `fecha_nacimiento`,`domicilio`) VALUES (:nombre, :apellido, :email, :saldo , :telefono, :sexo, :fecha_nacimiento, :domicilio);",
     {
-      nombre: clientes.nombre,  //  PREGUNTAR PROFE "reading 'nombre'"
+      nombre: clientes.nombre,  
       apellido: clientes.apellido,
       email: clientes.email,
+      saldo: clientes.saldo,
+      telefono: clientes.telefono,
+      sexo: clientes.sexo,
+      fecha_nacimiento: clientes.fecha_nacimiento,
+      domicilio: clientes.domicilio
     }
   );
 

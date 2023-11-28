@@ -54,7 +54,68 @@ export const NuevoCliente = () => {
                     onChange={(e)=>{setNuevoCliente({...nuevoCliente, email:e.target.value})}}
                     />
                 </div>
-                
+                <div className="form-group">
+                    <label htmlFor="telefono">Teléfono</label>
+                    <input
+                type="text"
+                className="form-control"
+                value={nuevoCliente.telefono}
+                onChange={(e) => {
+                    setNuevoCliente({ ...nuevoCliente, telefono: e.target.value })
+                }}
+                 />
+             </div>
+
+            <div className="form-group">
+                <label htmlFor="saldo">Saldo</label>
+                <input
+                    type="text"
+                    className="form-control"
+                  value={nuevoCliente.saldo}
+                  onChange={(e) => {
+                      setNuevoCliente({ ...nuevoCliente, saldo: e.target.value })
+                  }}
+              />
+          </div>
+
+          <div className="form-group">
+              <label htmlFor="fechaNacimiento">Fecha de Nacimiento</label>
+              <input
+                  type="date"
+                  className="form-control"
+                  value={nuevoCliente.fechaNacimiento}
+                  onChange={(e) => {
+                      setNuevoCliente({ ...nuevoCliente, fechaNacimiento: e.target.value })
+                  }}
+              />
+          </div>
+
+          <div className="form-group">
+              <label htmlFor="domicilio">Domicilio</label>
+              <input
+                  type="text"
+                  className="form-control"
+                  value={nuevoCliente.domicilio}
+                  onChange={(e) => {
+                      setNuevoCliente({ ...nuevoCliente, domicilio: e.target.value })
+                  }}
+              />
+          </div>
+
+          <div className="form-group">
+              <label htmlFor="sexo">Sexo</label>
+              <select
+                  className="form-control"
+                  value={nuevoCliente.sexo}
+                  onChange={(e) => {
+                      setNuevoCliente({ ...nuevoCliente, sexo: e.target.value })
+                  }}
+                  >
+                  <option value="M">Masculino</option>
+                  <option value="F">Femenino</option>
+                  <option value="otro">Otro</option>
+              </select>
+              </div> 
                 <button disabled={!nuevoCliente.nombre ||
                     !nuevoCliente.apellido  ||
                     !nuevoCliente.email}
