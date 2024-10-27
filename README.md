@@ -1,8 +1,4 @@
-# TP_LAB4_GRUPO_10
-TRABAJO FINAL LABORATORIO 4 
+# Trabajos de practica de David Ramirez
 
-RAMIREZ DAVID Y VALLES EXEQUIEL
-
-TEMA A TRABAJAR: BANCO
-
-TRUE
+subidos a un repositorio de github para trabajar de manera remota
+y subir los archivos de pruebas y mejorar la practica
