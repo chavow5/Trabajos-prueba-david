@@ -2,12 +2,12 @@ import React from 'react';
 // import logo from '../assets/img/logo-DH.png'; 
 import '../styles/Header.css';
 
-function Encabezado(){
+function Header(){
     return (
         <header className="encabezado">
-            <nav id="logo">
+            {/* <nav id="logo">
                 <a href="#"><img src={logo} alt="Logo Digital House"/></a>
-            </nav>
+            </nav> */}
             <nav id="opciones">
                 <ul>
                     <li><a href="#">Inicio</a></li>
