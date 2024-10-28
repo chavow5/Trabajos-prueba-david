@@ -1,10 +1,33 @@
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
+
+.pie ,.h2 {
+  background-color: #333;     /* Color de fondo oscuro */
+  color: #fff;                /* Color de texto blanco */
+  padding: 1rem;
+  text-align: center;         /* Centra el texto */
+  position: fixed;            /* Posiciona el footer en la parte inferior */
+  bottom: 0;
+  width: 100%;                /* Ancho completo de la pantalla */
+}
+.pie p {
+  margin: 0.5rem 0;
+}
+
+.pie ul {
+  display: flex;
+  justify-content: center;   /* Centra los enlaces de redes sociales */
+  gap: 1rem;                 /* Espacio entre elementos */
+  list-style: none;          /* Elimina los puntos de lista */
+  padding: 0;
+}
+
+.pie li a {
+  color: #fff;               /* Color de los enlaces */
+  text-decoration: none;
+}
+
+.pie li a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+h2 {
+  color: #fff !important;
+}

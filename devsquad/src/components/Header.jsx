@@ -1,24 +1,18 @@
 import React from 'react';
-// import logo from '../assets/img/logo-DH.png'; 
 import '../styles/Header.css';
 
-function Header(){
-    return (
-        <header className="encabezado">
-            {/* <nav id="logo">
-                <a href="#"><img src={logo} alt="Logo Digital House"/></a>
-            </nav> */}
-            <nav id="opciones">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
-export default Header;
+const Encabezado = () => {
+  return (
+    <header className="encabezado">
+      <h1> ViaPass</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#login">Ingresar</a> {/* Enlace del login */}
+      </nav>
+    </header>
+  );
+};
 
-
+export default Encabezado;
