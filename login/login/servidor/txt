@@ -1,0 +1,8 @@
+dependecias
+
+ npm install express bcryptjs jsonwebtoken dotenv
+
+ ejecutar node
+ node index.js
+
+ npm install mysql2
