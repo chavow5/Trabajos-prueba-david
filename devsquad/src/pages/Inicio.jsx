@@ -1,6 +1,6 @@
-// src/pages/Inicio.jsx
 import React from 'react';
 import '../styles/Inicio.css';
+import { Link } from 'react-router-dom';
 
 const Inicio = () => {
   return (
@@ -8,6 +8,13 @@ const Inicio = () => {
       <section className="bienvenida">
         <h2>Bienvenido al Sistema de Peajes</h2>
         <p>Tu acceso rápido y seguro a todos los peajes del país.</p>
+      </section>
+
+      <section className="login">
+        <h3>Iniciar Sesión</h3>
+        <p>
+          <Link to="/login" className="btn-login">Iniciar Sesión</Link>
+        </p>
       </section>
 
       <section className="servicios">
@@ -20,12 +27,7 @@ const Inicio = () => {
         </ul>
       </section>
 
-      <section className="registro">
-        <h3>¿No tienes una cuenta?</h3>
-        <p>
-          <a href="#registro" className="btn-registro">Regístrate aquí</a>
-        </p>
-      </section>
+     
     </div>
   );
 };
