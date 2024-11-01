@@ -1,8 +1,19 @@
 dependecias
 
  npm install express bcryptjs jsonwebtoken dotenv
-
- ejecutar node
- node index.js
-
+ 
  npm install mysql2
+
+ ejecutar node para prender el servidor
+ y abrir xamp - mysql 
+ node app.js
+ 
+
+ probar ruta de registro
+ post
+ http://localhost:5000/api/auth/registro
+ body json
+ {
+  "username": "usuarioPrueba",
+  "password": "contraseñaSegura"
+}
