@@ -1,9 +1,10 @@
-// autenticacion de la base de datos
 import express from "express";
 import { db } from "./db.js";
 import { body, validationResult } from "express-validator";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+
+// autenticacion antes de ingresar datos a la base de datos
 
 const router = express.Router();
 

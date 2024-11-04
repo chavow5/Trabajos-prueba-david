@@ -38,7 +38,7 @@ router.post(
     // Crear hash de la contraseña
     const passwordHashed = await bcrypt.hash(password, 10);
 
-    // Inserta en DB
+    // Inserta en la base de datos 
     const [result] = await db.execute(
       "insert into usuarios (username, password) values (?,?)",
       [username, passwordHashed]

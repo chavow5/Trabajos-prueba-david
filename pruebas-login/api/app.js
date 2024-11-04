@@ -11,16 +11,16 @@ console.log("Conectado a base de datos");
 const app = express();
 const port = 3000;
 
-// interpretar JSON en body
+// interpretar JSON en body y habilitar cors
 app.use(express.json());
-
-// Habilito cors
 app.use(cors());
 
+// rutas
 app.get("/", (_, res) => {
-  res.send("Hola mundo!");
+  res.send("Hola mundo");
 });
 
+// rutas usuarios y autenticacaion
 app.use("/usuarios", usuariosRouter);
 app.use("/auth", authRouter);
 
