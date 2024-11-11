@@ -1,1 +1,5 @@
-dependencias axios para hacer las peticiones htpp al back
+instalar node module 
+npm install
+
+correr vite con 
+npm run dev
