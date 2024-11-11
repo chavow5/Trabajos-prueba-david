@@ -1,0 +1,18 @@
+instalar dependecias primero
+npm install
+
+desde app ejecuto 
+node app.js 
+
+es para el login 
+
+probar login desde thunder 
+
+metodo post
+http://localhost:3000/usuarios
+body:
+{
+    "username": "davidramirez4",
+    "password": "David1234"
+  } // te crea el post con la contraseña hasheada
+  
