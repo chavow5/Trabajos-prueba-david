@@ -8,6 +8,10 @@ es para el login
 
 probar login desde thunder 
 
+metodo get
+http://localhost:3000/usuarios
+
+
 metodo post
 http://localhost:3000/usuarios
 body:
