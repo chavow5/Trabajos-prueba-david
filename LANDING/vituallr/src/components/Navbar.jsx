@@ -34,7 +34,7 @@ const Navbar = () => {
               href="#"
               className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
             >
-              Contactame
+              Contactarme
             </a>
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">

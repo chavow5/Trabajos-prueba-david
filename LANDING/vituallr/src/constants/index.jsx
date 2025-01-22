@@ -13,16 +13,16 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Sobre mi", href: "#" },
+  { label: "Trabajos", href: "#" },
+  { label: "deportivo", href: "#" },
+  { label: "contacto", href: "#" },
 ];
 
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Stellar Solutions",
+    user: "Felipe Ramirez",
+    company: "-",
     image: user1,
     text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
   },
@@ -58,42 +58,37 @@ export const testimonials = [
   },
 ];
 
+
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
-    description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+    text: "Proyectos Interactivos",
+    description: "Explora aplicaciones y sistemas interactivos que he desarrollado, mostrando mi capacidad como Full Stack Developer.",
   },
   {
     icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
-    description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+    text: "Código Optimizado",
+    description: "Mi trabajo prioriza la eficiencia y el diseño limpio, asegurando soluciones robustas y escalables.",
   },
   {
     icon: <ShieldHalf />,
-    text: "Built-in Templates",
-    description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+    text: "Seguridad y Calidad",
+    description: "Implemento buenas prácticas para garantizar aplicaciones seguras y de alta calidad.",
   },
   {
     icon: <BatteryCharging />,
-    text: "Real-Time Preview",
-    description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+    text: "Desempeño Sobresaliente",
+    description: "Mis proyectos están diseñados para ofrecer una experiencia fluida y de alto rendimiento.",
   },
   {
     icon: <PlugZap />,
-    text: "Collaboration Tools",
-    description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+    text: "Herramientas Modernas",
+    description: "Utilizo las últimas tecnologías y herramientas para ofrecer soluciones innovadoras y actualizadas.",
   },
   {
     icon: <GlobeLock />,
-    text: "Analytics Dashboard",
-    description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+    text: "Responsive Design",
+    description: "Mis proyectos son completamente adaptables, garantizando una experiencia óptima en cualquier dispositivo.",
   },
 ];
 
